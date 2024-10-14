@@ -15,6 +15,7 @@ pipeline {
                   node --version
                   npm --version
                   npm install -g @angular/cli
+                  npm install
                   npm run build
                   ls -la
                 '''
