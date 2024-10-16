@@ -17,7 +17,9 @@ pipeline {
                   npm install -g @angular/cli
                   npm install
                   npm run build
+                  cp -a dist/jenkins-angular-app-test /var/www/jenkins-test
                   ls -la
+                  pwd
                 '''
             }
         }
