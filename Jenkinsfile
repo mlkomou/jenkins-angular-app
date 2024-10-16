@@ -5,9 +5,6 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-                  node --version
-                  npm --version
-                  npm install -g @angular/cli
                   npm install
                   npm run build
                   cp -r dist/jenkins-angular-app-test /var/www/jenkins-test
