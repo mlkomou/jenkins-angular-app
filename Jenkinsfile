@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-                  ls -la
+                  nvm use v20.9.0
                   node --version
                   npm --version
                   npm install -g @angular/cli
