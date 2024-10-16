@@ -3,12 +3,6 @@ pipeline {
 
     stages {
         stage('Build') {
-          agent {
-            docker {
-              image 'node:20.9.0'
-              reuseNode true
-            }
-          }
             steps {
                 sh '''
                   ls -la
@@ -17,7 +11,7 @@ pipeline {
                   npm install -g @angular/cli
                   npm install
                   npm run build
-                  cp -r dist/jenkins-angular-app-test /var/www/
+                  cp -r dist/jenkins-angular-app-test /var/www/jenkins-test
                   ls -la
                   pwd
                 '''
