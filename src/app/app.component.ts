@@ -9,5 +9,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'jenkins-angular-app-test';
+  title = 'jenkins-angular-app-test deploy';
 }
